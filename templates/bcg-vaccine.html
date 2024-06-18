@@ -1,0 +1,154 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'BCG Vaccine' -->
+{% block title %} BCG Vaccine {% endblock %}
+
+<!-- BCG vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>BCG Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      BCG vaccine is a live bacterial vaccine given for protection against tuberculosis, mainly severe forms of childhood
+      tuberculosis. It stands for Bacillus Calmette Gurrain, the strain of bovine tuberculosis used in the vaccine &
+      attenuated by French scientists Calmette & Gurrain.<br>
+      BCG is given anytime from birth to 15 days of life along with the zero dose of oral polio vaccine. It is to be given
+      to all children as part of EPI schedule as recommended by Govt. of India.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>Storage and Preparation</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      BCG vaccine is available as a lyophilized powder in an ampoule. Diluent used is buffered saline that is available
+      separately. It is available in a multidose ampoule containing 20 doses. BCG vaccine stocks can be stored frozen in
+      freezer compartment. Working stock can be stored in the chiller compartment. Even diluents should be stored in the
+      refrigerator's lower racks at 2-8&deg;c. <br>
+      BCG vaccine ampoules should be cut with a file very slowly & not snapped open because it has vacuum inside or else
+      the glass will splinter and fly if cut very suddenly. It may be safer to hold the ampoule in a cloth to avoid injury
+      should the glass splinter. Once prepared, BCG vaccine should be used within 2-3 hours & discarded thereafter.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>BCG Vaccine Dosing</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      BCG vaccine is given intradermally i.e. in the layers of skin using 26 no. needle. It is given conventionally over
+      left deltoid area (to differentiate it from small pox vaccine scar, which was conventionally given over right
+      deltoid area). 0.1 ml of vaccine is given using BCG syringe which is a 1 ml. glass syringe with steel plunger to
+      identify it so that it is not used for any other purpose. A wheal or swelling of 6 mm is raised above the surface.
+      No spirit or antiseptic should be applied over the site before injection. Good bath with soap and water is enough to
+      clean the local injection site. At the most one can use normal saline to clean the area.<br>
+      Neither Govt. of India nor Indian Academy of Pediatrics recommends a booster dose of BCG in India. Some countries
+      like in Gulf recommend one or more booster doses.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>BCG Vaccine Efficacy</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      In a country like ours where tuberculosis is endemic, children catch the germs early in life & develop primary
+      complex. In children younger than 3-5 years of age, this can spread & lead to severe & serious forms of childhood
+      tuberculosis like tuberculous meningitis, disseminated tuberculosis, miliary tuberculosis, tuberculosis of organs
+      like bones, urinary tract etc. BCG being live vaccine itself induces a benign primary complex, which leads to some
+      immunity. Such a child when comes in contact with a patient with tuberculosis can still catch the wild germ and
+      develop primary complex, but the spread will be mostly prevented by previous BCG immunity. Hence such children will
+      not develop serious forms of childhood tuberculosis. Such children when they grow as adults can catch tuberculosis
+      again & develop adult form of tuberculosis which is a different type of tuberculosis altogether. This adult type of
+      tuberculosis is not prevented by BCG. Hence BCG does not prevent primary complex but prevents spread of the primary
+      complex & hence the severe forms of childhood tuberculosis. This explains the outcome of the famous Chingleput trial
+      on BCG vaccine efficacy, which failed to show the protective efficacy of BCG against adult type of tuberculosis.
+      <br>
+      Incidentally BCG also cross protects against leprosy & the efficacy is 20%.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>Reaction to BCG</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Immediately after the BCG vaccine there is a small swelling at the injection site which persists for 6-8 hours.
+      After that the swelling disappears & the injection site looks normal. After 6-8 weeks a swelling reappears which
+      looks like a mosquito bite. It grows in size & forms a nodule which breaks open & discharges some fluid & forms an
+      ulcer. The ulcer heals by forming a scar. The whole process takes 2-5 weeks. Some times this process of ulceration &
+      healing recurs 2-3 times. Ultimately the typical puckered scar is formed which remains for lifetime. <br>
+      Injection site should not be pressed or rubbed. It should not be fomented. Nothing needs to be applied locally.
+      Infact, bath with soap and water should suffice even when it has ulcerated. <br>
+      If ulceration occurs within 7 days of injection, one must report to the doctor, as it may be a sign of tuberculosis
+      in the child.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>Site of BCG Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      As we saw before, 1-2% of children develop local BCG lymphadenitis. If that happens following injection over thigh,
+      it will involve superficial & deep inguinal lymph nodes, which can prove dangerous. Also, by convention BCG scars
+      are looked for over the left arm & hence it is easier to recognize for the doctor when parents do not remember
+      whether BCG was given in the past or not. Hence BCG should only be given over left arm & nowhere else.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>BCG Adenitis</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Local lymphadenitis can occur due to superadded infection over BCG ulcer. One should try oral antibiotics &
+      anti-inflammatory with good local hygiene (Soap & water). If the lymph node does not shrink or disappear, it is true
+      BCG lymphdenitis. In these cases if the size of node is less than 10mm - 15mm, if it is firm, non-painful & not
+      matted; no treatment is required & only observation is required. It will usually disappear on its own in the next
+      few months time. If the glands are bigger than 15mm, soft, fluctuating with signs of inflammation or softening,
+      painful and matted or if already an abscess has formed with or without discharge, treatment is definitely required.
+      One can either remove the entire gland surgically or try a course of anti-tuberculous drugs in form of Isoniazid 5
+      mg/kg/day & Rifampicin 10mg/kg/day on empty stomach for a period of 3-6 months.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>BCG Not Given at Birth</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      BCG should be given as early as possible in life, before child comes in contact with tuberculosis. It can be given
+      up to 5 years of age. If it is given beyond 6 months it is preferable to do a prior Mantoux test to see if the
+      patient is already sensitized to tuberculosis. If patient is already sensitized as shown by positive MT, BCG is not
+      necessary. If prior MT is not done, at least check for accelerated reaction to BCG in first week after vaccination
+      which may suggest presence of tuberculosis in the child.<br>
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>BCG and Developed Countries</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      In developed countries like USA, very few cases of tuberculosis occur. As BCG does not prevent primary complex or
+      the adult type of tuberculosis no benefit will be derived by routine BCG vaccination in such countries. In fact BCG
+      can interfere with interpretation of Mantoux test done subsequently. Hence BCG is not recommended in USA routinely.
+      With the spread of HIV, incidence of tuberculosis is rising in USA. Under such circumstances they may have to
+      reconsider about routine BCG vaccination.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>No BCG Scar Post Vaccination</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Formation of scar is neither necessary nor is the only indication of success of BCG vaccine. However it is the only
+      simple & convenient way of determining success of BCG vaccine. It may take 3-6 months for the scar to form. If no
+      scar is visible at all after 6 months one needs to do Mantoux test. If negative, one should give repeat BCG.
+
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>Can BCG Be Given With Other Vaccines?</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      BCG can be given with other vaccines. In fact, BCG is given along with zero dose of OPV & 1st Dose of Hepatitis B
+      vaccine at birth. As measles can depress cell mediated immunity & as BCG induces cell mediated immunity BCG should
+      not be given along with measles or MMR.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>BCG Vaccine - Complications</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      BCG does not lead to fever. Hence search for another cause & treat accordingly. In 1-2 % of vaccinees, local
+      lymphadenitis can occur involving axillary lymph nodes or rarely supraclavicular gland, especially if injection is
+      given very high over arm. In children with immune compromised state like AIDS, BCG can lead to progressive systemic
+      disease.
+    </p>
+  </div>
+{% endblock %}

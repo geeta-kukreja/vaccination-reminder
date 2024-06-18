@@ -1,0 +1,42 @@
+<!-- Extend base template -->
+{% extends 'base.html' %}
+
+<!-- Set active class for 'Contact' menu item -->
+{% set active = "Contact" %}
+
+<!-- Update page title with 'Contact' -->
+{% block title %} Contact {% endblock %}
+
+<!-- About page content -->
+{% block content %}
+  <div class="container-fluid page-content">
+    <div class="container">
+      <div class="row page-header">
+        <div class="col-md-12">
+          <h1><span>We'd Love to Hear From You</span></h1>
+          <p>No matter what queries you may have regarding the features, your concerns, or your suggestions, we are here
+            to assist you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid vaccine-form" id="contact-form">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-6">
+          <h2> Contact Form </h2>
+          <form method="post">
+            <input type="text" name="Name" class="form-control" placeholder="Full Name" required="required">
+            <input type="email" name="Email" class="form-control" placeholder="Email Address" required="required">
+            <textarea class="form-control" name="Message" placeholder="Message" required="required"></textarea>
+            <div class="form-group">
+              <button class="btn btn-primary" value="Send Message" type="submit">Send Message <i
+                  class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

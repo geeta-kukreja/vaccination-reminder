@@ -1,0 +1,53 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'MMR Details' -->
+{% block title %} MMR Vaccine {% endblock %}
+
+<!-- MMR vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>MMR Vaccine - Introduction</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      MMR vaccine is given for protection against 3 common childhood viral diseases namely measles, mumps & rubella (German Measles).<br>
+      MMR vaccine is available as a bulb containing lyophilized powder. Diluent is distilled water or normal saline & is available separately in an ampoule. MMR is a live viral vaccine. It is available as mono dose or as multidose bulb.<br>
+      It is stored in a refrigerator. The vaccine stocks are stored frozen in freezer compartment. Working stock can be stored at 2-8 degree C in the lower rack. No vaccine is stored in the door of the refrigerator. The diluent is also stored at 2-8 &deg;C.<br>
+      MMR vaccine is prepared by adding diluent in the powder. Once prepared it should be used immediately. At the most it can be kept for 2-3 hours that too at 2-8 degree C after which it is discarded. Like measles vaccine, MMR vaccine does not have preservative, hence growth of pathogens can occur after reconstitution. Such a vaccine if not stored properly or used beyond 2-3 hours of reconstitution can lead to toxic shock syndrome as seen with measles vaccine. <br>
+      MMR vaccine is given subcutaneously using 26 no. needle, by raising a fold of skin with one hand & injecting the vaccine beneath it. It is given either over anterolateral aspect of thigh or over the arm. The efficacy of the vaccine remains the same even if given intramuscularly by mistake; gluteal region should not be used for any injection in children, especially below 2 years of age.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Usefulness Of MMR Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      MMR vaccine is not an EPI vaccine as per Govt. of India. Indian Academy of Pediatrics & most of the pediatricians strongly recommend this vaccine as a routine for all children. There are some states in India (like Delhi) where pilot projects of giving MMR routinely as a part of EPI vaccines have been started. Hopefully it will become a part of national schedule soon. It is essential for children as the measles part of MMR will boost up the immunity against measles induced by previous measles vaccine. Mumps is a common cause of morbidity in children with occasional chances of complications like encephalitis & pancreatitis. But its most important silent complications are oopheritis & orchitis. This will manifest as primary sterility in adulthood. Rubella or German measles though a benign disease can lead to congenital rubella syndrome if it occurs during pregnancy. Such a child will have cataract, deafness, congenital heart disease, microcephaly, mental retardation, hepatitis & many other complications. Hence MMR vaccine is essential.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>MMR Vaccine - Schedule</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Two doses are recommended one at the age of 12-15 months and second at school entry (4-6 years) or at any time 8 weeks after the first dose. The second dose of MMR vaccine is to protect children failing to seroconvert against primarily Mumps and less commonly against Rubella (primary vaccine failures).<br>
+      Single dose of MMR vaccine has excellent efficacy with 95% protective titres, especially against measles & rubella. Breakthrough mumps can occur inspite of vaccination. A booster of MMR will further increase its efficacy as discussed before. <br>
+      Delayed dose: Measles mostly occurs till 5 - 15 years of age. Mumps & rubella can occur at any age. Hence if a patient comes late he can be given MMR till 5-15 years of age after which MR (Mumps, Rubella) vaccine can be given. As MR vaccine is not available MMR can be given even to older individuals as no harm is done by measles part. If a patient has already developed measles, mumps & rubella he dose not need a vaccine against them. <br>
+      Use with other vaccines: Yes, MMR can be given simultaneously with other vaccines. In fact it can be given along with 1st booster dose of OPV, DPT vaccine & Hib or with Varicella vaccine. A combination vaccine containing MMR + varicella is available. Like with measles, MMR vaccine can lead to temporary suppression of immunity for 4-6 weeks. Hence BCG should not be given with MMR & no other vaccine should be given within 4-6 weeks of MMR vaccine.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>MMR Vaccine - Side Effects</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      MMR vaccine is a very safe vaccine. If at all, it leads to mild pain, swelling, induration or fever. It is seen in less than 10% of patients, is transient & mild, lasts for less than 24 hours & responds well to paracetamol. It can occur from the day of injection till 5-7 days. Sometimes a patient can develop measles like infection with cough, cold, red eyes & rash over skin. Again it lasts for 2-5 days & is self-limiting. Contrary to belief, MMR vaccine does not lead to SSPE. There are 2 complications that could prove fatal and are discussed below:<br>
+      Anaphylaxis is seen in patients with egg allergy as MMR (like measles vaccine) is grown in chick embryo culture. In patients, with mild egg allergy it leads to less severe reactions like angioedema, puffiness, urticaria, anaphylactoid reactions. In patients with severe allergies, it can lead to frank anaphylaxis. In cases of severe egg allergy, measles & MMR vaccines are contraindicated. In case with mild egg allergy, measles or MMR vaccines can be given but with strict medical supervision and all the measures of resuscitation & drugs kept ready should the patient develop reaction. <br>
+      Toxic shock syndrome (TSS) is an unfortunate but avoidable reaction of MMR vaccine. MMR vaccine does not have a preservative. Hence, once reconstituted it should not be kept beyond 2-3 hours & that too it should be kept at 2-80C. If it is not stored properly or is used after 2-3 hours there are chances of growth of pathogens, most important being staphylococci. When this happens, the staphylococcal toxin formed will lead to fever, diarrhea, vomiting, blood in stools, DIC, shock & ultimately death. This usually follows use of multidose bulbs where the balance doses are not kept properly or not used in time. Obviously, it is totally avoidable by using properly stored vaccine and using the vaccine immediately after reconstitution. This is the reason why mono doses are preferred over multidose bulbs.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>MMR Vaccine - Contraindications</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      True & severe egg allergy is the contraindication to use Measles or MMR vaccine. A sick patient should receive any vaccine after he recovers from his illness. If a patient has shown severe adverse effects following any vaccine he should not receive the same vaccine again & this is true for measles & MMR vaccine too.
+    </p>
+  </div>
+{% endblock %}

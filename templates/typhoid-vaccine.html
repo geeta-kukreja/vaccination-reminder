@@ -1,0 +1,28 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Typhoid Vaccine' -->
+{% block title %} Typhoid Vaccine {% endblock %}
+
+<!-- Typhoid vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Typhoid Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Protection against enteric fever might be best achieved by a vaccine that stimulates IgG antibodies to "Vi" capsular polysaccharide in serum, IgG antibodies to "O" antigen in serum and cell mediated immune response. <br>
+      Vi antigen vaccine: It contains the Vi polysaccharide antigen of S. typhi. As Vi polysaccharide is the most important virulent factor, the antibodies against Vi antigen are protective against typhoid fever. It is a subunit-inactivated vaccine. It is freely available for use. Vi antigen vaccine is given in the dose of 0.5 ml intramuscularly either on anterolateral aspect of thigh or in deltoid muscle. It is given as a single dose. It is given in children above 2 years of age. <br>
+      Oral ty21a vaccine: This is no longer available. This is an oral live vaccine. It contains the ty21a strain of S. typhi, which is a mutant strain lacking UDP galactose epimerase enzyme. It induces local gut immunity without any systemic immunity. Live attenuated vaccine (Ty21a) is not able to elicit anti Vi antibodies may be because Vi expression is highly regulated. Also unexpected symptoms like dizziness and pruritis, fatigue and myalgia and occasional cases of reactive arthritis has also been reported with this vaccine. Oral ty21a vaccine is a course of 3 capsules given orally on alternate days. The capsules should be swallowed intact & not opened or chewed. In most, the pack contains 4 capsules and such 4 capsules are given on alternate days. <br>
+      Since both these vaccines do not induce cell mediated immunity, the protective efficacy lasts for 2-3 years in most of the vaccinees and bosster doses are required every 2-3 years. <br>
+      Vi-polysaccharide conjugate typhoid vaccine (TCV): It is a Vi-capsular polysaccharide conjugate typhoid vaccine conjugated with tetanus toxoid. The dose of Vi polysaccharide is 25 &#956;g/0.5 mL. The vaccine has been licensed by the Drug Controller General of India (DCGI) in August, 2013 for clinical use in India. This vaccine has been approved for use in children below 1 years of age. Though seroconversion rates of 98.05% have been reported with this vaccine, the antibody titres fall significantly after 18 months suggesting that a booster dose may be required. However when the booster dose should be given can only be established on long term follow up. The Indian Academy of Pediatrics recommends that the TCV can be given below one year of age, preferably between 9-12 months (minimum age 6 months). Since the incompatibility data with measles vaccine is not available, it would be prudent to maintain an interval of at least 4 weeks with the former.
+    </p>
+  </div>
+{% endblock %}

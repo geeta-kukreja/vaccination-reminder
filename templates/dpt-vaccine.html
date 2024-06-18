@@ -1,0 +1,48 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'DPT Vaccine' -->
+{% block title %} DPT Vaccine {% endblock %}
+
+<!-- DPT vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>DPT Vaccine - Introduction</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      DPT vaccine protects against diphtheria, pertussis (whooping cough) and tetanus. Whooping cough or pertussis is a strictly respiratory human disease. It is one of the most common vaccine-preventable childhood disease. Infants under 6 months of age, who are unimmunized or incompletely immunized, continue to suffer the greatest disease burden and mortality. The causal agent is Bordetella pertussis, a Gram negative bacterium. Pertussis causes nearly 300000 deaths in children every year. Most deaths take place in developing countries. Pertussis is very infectious with high secondary attack rates in households. Complications of pertussis include pneumonia, failure to thrive, post-tussive vomiting, seizures, encephalopathy, cerebral hypoxia, secondary bacterial infection, pulmonary hypertension, sub-conjunctival hemorrhage, and rectal prolapse.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Types of DPT Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      DPwT: Popularly known as triple antigen, DTwP is composed of tetanus and diphtheria toxoids as well as killed whole cell pertussis bacilli adsorbed on insoluble aluminium salts which act as adjuvants. The content of diphtheria toxoid varies from 20 to 30 Lf and that of tetanus toxoid varies from 5 to 25 Lf per dose. Whole-cell pertussis vaccine is a suspension of killed B pertussis organisms. For more than 40 years, the immunization of infants with whole cell pertussis vaccine (Pw) vaccines has been very successful in reducing severe infections and deaths by more than 95%. With the 3 dose schedule, the immunity seems to remain for 8-10 years following which booster dose would be required.<br>
+      DPaT: It is the same diphtheria and tetanus toxoid along with acellular pertussis vaccine. The high rates of side effects to these Pw vaccines directed scientists to develop a second type of vaccine, called the acellular pertussis (Pa) vaccine, composed of inactivated bacterial proteins. The major toxins of pertussis are tracheal cytotoxin (TCT), responsible for the destruction of tracheal ciliated cells, pertussis toxin (PT), and adenylate cyclase-hemolysin (AC-Hly), which synergistically inhibit immune host defences. The major adhesins are filamentous hemagglutinin (FHA), pertactin (PRN), and fimbriae (FIM) which allow the bacteria to adhere to epithelial and immune host cells. All Pa vaccines contain chemically inactivated PT. To this protein, depending on the manufacturer, is added FHA or FHA and PRN or FHA, PRN and FIM. Pa vaccines are easier to produce and better tolerated by infants. However, they are much more expensive. DTaP vaccines are not more efficacious than DTwP vaccines and may offer immunity for 5-7 years post 3 dose schedule, however they have fewer adverse effects.<br>
+      The DTaP vaccines may be preferred to DTwP vaccines in those children with history of severe adverse effects following DTwP vaccines. <br>
+      Tdap vaccine: Recently, a low dose, adult-formulated diphtheria, tetanus, acellular pertussis (Tdap) vaccine has been licensed and recommended in several countries for use in adults and adolescents. Efficacy data from a large trial in the USA (APERT), estimates vaccine protection from culture or PCR proven symptomatic pertussis disease is 92%, though protection against less severe coughing illness is likely to be only 50-60%. In individuals who have completed primary and booster vaccination with DTwP/ DTaP, Tdap boosters every 10 years provide sufficient protection.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Dosing and Storage</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Dose is 0.5ml intramuscularly. It should be stored at 2-8 degree Celsius. The standard schedule is three primary doses at 6, 10 and 14 weeks and two boosters at 15-18 months and 5 years followed by boosters every 10 years with either TT or Tdap
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Adverse Effects</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Pain, swelling, redness, difficulty in walking, fever, lassitude, anorexia, vomiting, irritability and excessive crying is seen in 30-40% of vaccinees. It persists for 24-72 hours & responds to paracetamol. Rarely if the injection has gone into deep fascia there could be swelling & redness of lateral aspect of thigh. Sometimes a nodule forms at the injection site which may persist for several days to weeks. It may soften and form a sterile abscess. It does not merit any treatment except analgesics. If it shows fluctuation, it can be drained. <br>
+      Whole cell pertussis component may lead to severe adverse effect. It includes hyperpyrexia i.e. fever more than 1050 &deg;F, excessive crying & screaming spells lasting for more than 4 hours, convulsion occurring within next 7 days, encephalitis in next 14 days, unconsciousness or altered sensorium, hypotonic, hyporeflexic episode (HHE), shock etc. If a patient develops any of those adverse reactions it is a contraindication to further use of any form of DPT.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Contraindications to Pertussis Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Absolute contraindications to any pertussis vaccination (including DTwP vaccine) is history of anaphylaxis or development of encephalopathy within 7 days following previous DTP vaccination. For patients with history of encephalopathy following vaccination, any pertussis vaccine is contraindicated and only diphtheria & tetanus vaccines may be used. Progressive/evolving neurological illnesses, is a relative contraindication to first dose of DTwP immunization.
+    </p>
+  </div>
+{% endblock %}

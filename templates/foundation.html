@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% block title %}{% endblock %} | Vaccine Reminder & Vaccine Schedule</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href='/static/fonts/Source-serif-pro/source-serif-pro.css' rel='stylesheet' type='text/css'>
+
+  <!-- Awesome fonts CSS -->
+  <link href="/static/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css">
+  <!-- Dropdown style  -->
+  <link rel="stylesheet" href="/static/css/dropdown-content.css">
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="/static/css/main.css">
+  <!-- jQuery JS -->
+  <script src="/static/js/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+  <!-- Datetime Picker-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+  {% block header %}{% endblock %}
+</head>
+
+<body>
+  <div id="fh5co-page">
+    <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+      {% if session['user'] %}
+      <h1 id="fh5co-logo"><a href="/profile"> {{ session['user']['name'] }}</a></h1>
+      {% endif %}
+      <nav id="fh5co-main-menu" role="navigation">
+        <ul>
+          <li class="{% if active == 'Vaccine Schedule' %} fh5co-active {% endif %}"><a href="/vaccine-schedule"><i class="fa fa-th" aria-hidden="true"></i>Vaccine Schedule</a></li>
+          <li class="{% if active == 'Calendar Schedule' %} fh5co-active {% endif %}"><a href="/calendar-schedule"><i class="fa fa-calendar" aria-hidden="true"></i>Calendar Schedule</a></li>
+          <li class="{% if active == 'Vaccine Details' %} fh5co-active {% endif %}"><a href="/vaccine-details"><i class="fa fa-info-circle" aria-hidden="true"></i>Vaccine Details</a></li>
+          <li class="{% if active == 'Nearby hospitals' %} fh5co-active {% endif %}"><a href="/nearby_hospitals"><i class="fa fa-info-circle" aria-hidden="true"></i>Nearby hospitals</a></li>
+          <li class="{% if active == 'Ask Question' %} fh5co-active {% endif %}"><a href="/ask-question"><i class="fa fa-question-circle" aria-hidden="true"></i>Ask Question</a></li>
+          <li class="{% if active == 'Profile' %} fh5co-active {% endif %}"><a href="/profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
+          <li class="{% if active == 'Home' %} fh5co-active {% endif %}"><a href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div id="fh5co-main">
+      <div class="header text-center">
+        <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" >
+          <span >{{ header }}</span>
+        </div>
+      </div>
+
+      {% block content %}{% endblock %}
+
+    </div>
+  </div>
+
+  <!-- Dropdown content and main JS -->
+  <script src="/static/js/dropdownContent.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+
+</html>

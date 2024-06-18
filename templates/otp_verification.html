@@ -1,0 +1,67 @@
+<!-- Extend base template -->
+{% extends 'base.html' %}
+
+<!-- Set active class for 'Forgot Password' menu item -->
+{% set active = "Verify Email" %}
+{% block header %}
+    <script src="/static/js/actions.js"></script>
+    <script>
+        let otp =" "
+        let digitValidate = function(ele){
+        console.log(ele.value);
+        ele.value = ele.value.replace(/[^0-9]/g,'');
+        otp = otp + ele.value.toString();
+        otp = otp.trim();
+        console.log(otp);
+    }
+
+    let tabChange = function(val) {
+        let ele = document.querySelectorAll('input');
+        if (ele[val - 1].value != '') {
+            ele[val].focus()
+        } else if (ele[val - 1].value == '') {
+            ele[val - 2].focus()
+        }
+    }
+    //  {#$("#submitotp").click(function pulsanteSalva() {#}
+    //  {#       console.log("Hi");#}
+    //  {#       console.log(otp);#}
+    //  {#       const actions = new PerformAction();#}
+    //  {#       actions.validateOtp(otp);#}
+    //  {#           // {#alert(tendina());#}
+    //  {##}
+    //  {#       });#}
+    </script>
+{% endblock %}
+<!-- Update page title with 'Forgot Password' -->
+{% block title %} Verify Email {% endblock %}
+
+<!-- About page content -->
+{% block content %}
+    <div class="container-fluid page-content">
+        <div class="container">
+            <div class="row page-header">
+                <div class="col-md-12">
+                    <h1><span>Verify Email</span></h1>
+                    <p>	Please enter the code generated on your email below to verify your email!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="" method="post" class="mt-5 digit-group vaccine-form">
+        <div style="text-align: center">
+        <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1 name="digit1">
+        <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1 name="digit2">
+        <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1 name="digit3">
+        <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(4)' maxlength=1 name="digit4">
+        <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(5)' maxlength=1 name="digit5">
+        <input class="otp" type="text" oninput='digitValidate(this)'  maxlength=1 name="digit6"></div>
+        <br>
+           <div  style="display:flex;
+                          align-items: center;justify-content: center;"><button class="btn btn-primary" value="Log In" type="submit">Verify <i class="fa fa-angle-right"
+                                                                                                       aria-hidden="true"></i></button>
+
+           </div>
+</form>
+
+{% endblock %}

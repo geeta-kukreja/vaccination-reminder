@@ -1,0 +1,64 @@
+<!-- Extend base template -->
+{% extends 'base.html' %}
+
+<!-- Set active class for 'Services' menu item -->
+{% set active = "Services" %}
+
+<!-- Update page title with 'Services' -->
+{% block title %} Services {% endblock %}
+
+<!-- About page content -->
+{% block content %}
+  <div class="container-fluid page-content">
+    <div class="container">
+      <div class="row page-header">
+        <div class="col-md-12">
+          <h1><span>Our Services</span></h1>
+          <p>The major goal of vaccination is to teach parents how to conveniently keep track of their children's
+            vaccinations.Many services are offered by Vaccination, including vaccine reminder, an appropriate
+            immunization schedule, information about vaccines, and ask doctor facilities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid vaccine-features-list">
+    <div class="container">
+      <div class="row">
+        <div class="media col-md-6 col-lg-6">
+          <div class="oval mr-4"><img class="align-self-start" src="/static/images/bell-regular.svg" alt="Reminder Icon"></div>
+          <div class="media-body">
+            <h5 class="mb-0">Vaccine Reminder</h5>
+            We would want to provide vaccine reminder services through email so that parents may easily remember the
+            dates of their children's immunizations.
+          </div>
+        </div>
+        <div class="media col-md-6 col-lg-6">
+          <div class="oval mr-4"><img class="align-self-start" src="/static/images/calendar-days-regular.svg"
+              alt="Informative Icon"></div>
+          <div class="media-body">
+            <h5 class="mb-0">Vaccine Schedule</h5>
+            We would want to provide an adequate vaccination schedule so that parents may readily follow the
+            immunization regimen.
+          </div>
+        </div>
+        <div class="media col-md-6 col-lg-6">
+          <div class="oval mr-4"><img class="align-self-start" src="/static/images/circle-info.svg" alt="Calendar Icon"></div>
+          <div class="media-body">
+            <h5 class="mb-0">Vaccine Details</h5>
+            In order for parents to understand what kind of illness is likely to occur after a certain vaccine, we wish
+            to inform them about the various immunizations.
+          </div>
+        </div>
+        <div class="media col-md-6 col-lg-6">
+          <div class="oval mr-4"><img class="align-self-start" src="/static/images/user-doctor.svg" alt="Doctor Icon  "></div>
+          <div class="media-body">
+            <h5 class="mb-0">Ask Doctor</h5>
+            To enable parents to ask questions regarding medical problems, we would want to make ask doctor capabilities
+            available to them.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

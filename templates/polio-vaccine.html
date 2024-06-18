@@ -1,0 +1,89 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Polio Vaccine' -->
+{% block title %} Polio Vaccine {% endblock %}
+
+<!-- Polio vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>Polio Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Polio (poliomyelitis) mainly affects children under five years of age. Polio virus invades the nervous system and
+      can cause total paralysis in a matter of hours. Polio is mainly passed through person-to-person (i.e., fecal-oral)
+      contact, and infects persons who do not have immunity against the disease.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>Polio Eradication Campaign</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      In 1988, the forty-first World Health Assembly, consisting then of delegates from 166 Member States, adopted a
+      resolution for the worldwide eradication of polio. It marked the launch of the Global Polio Eradication Initiative,
+      spearheaded by the World Health Organization (WHO), Rotary International, the US Centers for Disease Control and
+      Prevention (CDC) and UNICEF. The primary strategies for achieving this goal are:<br>
+      &#8658; high infant immunization coverage with four doses of oral poliovirus vaccine (OPV) in the first year of
+      life;<br>
+      &#8658; supplementary doses of OPV to all children under five years of age during national immunization days
+      (NIDs)<br>
+      &#8658; surveillance for wild poliovirus through reporting and laboratory testing of all acute flaccid paralysis
+      (AFP) cases among children under fifteen years of age;<br>
+      &#8658; targeted "mop-up" campaigns once wild poliovirus transmission is limited to a specific focal area. <br>
+      Polio cases have decreased by over 99% since 1988, from an estimated 350,000 cases then, to 1604 reported cases in
+      2009. However, polio eradication campaign is way behind where its planners hoped it would be at this stage. There
+      are still four countries (Nigeria, India, Pakistan and Afghanistan) in which transmission has never been
+      interrupted. Furthermore, 14 countries in which poliomyelitis had been eradicated have reported re-introduction,
+      admittedly small numbers of cases, but showing that the threat is still quite real. Persistent pockets of polio
+      transmission in northern India, northern Nigeria and the border between Afghanistan and Pakistan are the current
+      focus of the polio eradication initiative.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>National Immunization Days/ Pulse Polio Immunization</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Pulse Polio Immunization (PPI) involves providing additional OPV doses to every child aged less than 5 years at
+      intervals of 4-6 weeks. The aim of PPI is to "flood" the community with OPV within a very short period of time,
+      thereby interrupting transmission of virus throughout the community. In 2005, new monovalent polio vaccines (mOPV
+      type 1 and type 3) were licensed and used to enhance the impact of supplementary immunization activities (SIAs) in
+      the key remaining reservoirs of wild polio. Despite the use of mOPVs and the intensification of the global
+      eradication efforts in 2007, indigenous wild poliovirus type 1 (WPV1) and 3 (WPV3) transmission has continued.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>Contra Indications of Polio Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      IPV is only contraindicated in children who have experienced a severe allergic reaction to a previous dose of IPV or
+      to streptomycin, polymyxin B, or neomycin. OPV is contraindicated in children who have immunosuppressive conditions
+      due to congenital immunodeficiency (agammaglobulinemia or hypogammaglobulinemia), cancer (leukemia or lymphoma),
+      immunosuppressive chemotherapy, or acquired immunodeficiency syndrome (AIDS). OPV also is contraindicated for family
+      and other close contacts of immunocompromised people because of the risk of spread of OPV to the affected person.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>Recommendation For Polio Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Child who has not received any polio vaccination so far: OPV at birth, IPV at 6, 10 and 14 weeks, OPV at 6 months
+      and 9 months, IPV at 15-18 mths and OPV at 5 years. OPV on all pulse polio immunization days. <br>
+      Child who has completed primary series of OPV: IPV may be offered as catch up vaccination for children less than 5
+      years of age who have completed primary immunization with OPV. IPV can be given two doses at 2 month interval. OPV
+      need not be given with these IPV doses.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right"
+        aria-hidden="true"></i>Polio Vaccine Storage and Dosing</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      OPV is a very heat sensitive vaccine having a shelf life of 2 years at a temperature of -20oC, 6 months at 2 to 8oC
+      and 1-3 days at room temperature. OPV should be stored at -20&deg;
+
+    </p>
+  </div>
+{% endblock %}

@@ -1,0 +1,56 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Measles Vaccine' -->
+{% block title %} Measles Vaccine {% endblock %}
+
+<!-- Measles vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Measles Vaccine - Introduction</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Measles vaccine is given for protection against measles, the typical exanthematous fever of childhood. It is a live viral vaccine. It is available in lyophilized form as powder in a bulb. Diluent is distilled water & is available as a separate ampoule. It is available as monodose or as multidose containing 2 or 5 doses. The final volume of reconstituted vaccine is 0.5 ml per dose.<br>
+      Being a live viral vaccine it needs strict cold chain maintenance. Both the vaccine & the diluent must be stored in refrigerator. Vaccine stock can be stored frozen in freezer compartment. The working stock is kept at 2-8 &deg;C in the chiller tray. The diluent is kept in the 3rd rack. No vaccine should be stored in the door compartment.<br>
+      Measles vaccine is prepared by adding diluent in the bulb. Once prepared it should be used immediately within 2-3 hours, after this the vaccine should be discarded as it can lead to toxic shock syndrome (discussed later). It is given subcutaneously over the thigh or the arm. Subcutaneous injections are given using 26 no. needle by raising a fold of skin by one hand and injecting the vaccine underneath the fold. Inadvertent IM injections lead to equally effective immunity.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Schedule and Dosing</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      It is given at the age of completed 9 months (270+ days of life). Transplacental maternal anti-measles antibodies persist in the child for as long as 9 months. These antibodies protect the child against measles, hence measles usually occurs after 9 months. Giving vaccine before 9 months may not be very effective due to interference by the maternal antibodies. This rule is not always true. In countries like India, a mother may be malnourished & may not have good titres of anti- measles antibodies. Children born to such mothers can suffer from measles as early as 6 months of life. Hence during epidemics of measles the vaccine can be given as early as 6 months, but this should be followed by one more measles vaccine at 9 months. In west, children are given straight MMR at 12-15 months of age. That is due to lack of measles with mass measles vaccination. In our country, if one waits till 12-15 months many children will develop measles before that. Hence we advise measles vaccine at 9 months followed by MMR at 15 months. As we achieve higher coverage of measles vaccination in our country, incidence of measles will become far less. That time we can think of postponing the age of measles vaccine & even giving it as MMR at 12-15 months, as is now done in West. <br>
+      Booster dose is not recommended. However one may see modified measles in a child vaccinated with measles vaccine. Hence Indian Academy of Pediatrics recommends booster in form of MMR vaccine at 15-18 months of age and at 5 years again.<br>
+      A child who suffers from measles develops life long immunity. Hence such a child does not need measles vaccine. However measles is usually recognized by the clinical manifestations which are so typical. There are other exanthematous fevers of childhood, which mimic like measles. Patients may mistake them for measles. Hence rely only on a doctor's documentation & not on patient's history about past episode of measles. When in doubt it is better to give measles vaccine as no harm is done even if patient has suffered from measles in past.<br>
+      Measles can occur till 5-15 years of age. If a patient comes before 12 months of age, he can still be given measles vaccine. It he comes after 12 months he is given MMR or Measles vaccine, whichever he can afford.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Measles Vaccine - Contraindications</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      True & severe egg allergy is the contraindication to use Measles or MMR vaccine. A sick patient should receive any vaccine after he recovers from his illness. If a patient has shown severe adverse effects following any vaccine he should not receive the same vaccine again & this is true for measles & MMR vaccine too.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Measles Vaccine - Efficacy</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Measles vaccine is an excellent vaccine with more than 90% efficacy with a booster given in form of MMR. Even if a patient who is vaccinated develops measles, it is usually modified and mild with quick recovery & without serious complications.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Measles Vaccine - Side Effects</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Measles vaccine is a very safe vaccine. If at all, it leads to mild pain, swelling, induration or fever. It is seen in less than 10% of patients, is transient & mild, lasts for less than 24 hours & responds well to paracetamol. It can occur from the day of injection till 5-7 days. Sometimes a patient can develop measles like infection with cough, cold, red eyes & rash over skin. Again it lasts for 2-5 day & is self-limiting. Contrary to belief, measles vaccine does not lead to SSPE. There are 2 complications of measles vaccine namely anaphylaxis and toxic shock syndrome. <br>
+      Anaphylaxis is seen in patients with egg allergy as measles vaccine (like MMR) is grown in chick embryo culture. In patients, with mild egg allergy it leads to less severe reactions like angioedema, puffiness, urticaria, anaphylactoid reactions. In patients with severe allergies, it can lead to frank anaphylaxis. In cases of severe egg allergy, measles & MMR vaccines are contraindicated. In case with mild egg allergy, measles or MMR vaccines can be given but with strict medical supervision and all the measures of resuscitation & drugs kept ready should the patient develop reaction. <br>
+      Toxic shock syndrome (TSS) is an unfortunate but avoidable reaction of measles vaccine. Measles vaccine does not have a preservative. Hence, once reconstituted it should not be kept beyond 2-3 hours & that too it should be kept on ice. If it is not stored properly or is used after 2-3 hours there are chances of growth of pathogens, most important being staphylococci. When infected, the staphylococcal toxin formed will lead to fever, diarrhea, vomiting, blood in stools, DIC, shock & ultimately death. This usually follows use of multidose bulbs where the balance doses are not kept properly or not used in time. Obviously, it is totally avoidable by using properly stored vaccine and using the vaccine immediately after reconstitution. Single dose vaccine vials are hence preferred over multidose vials.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Can Measles Vaccine Be Given along with Other Vaccines?</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Measles vaccine can be given simultaneously with other vaccines. In fact it is given along with 5th dose of OPV & even 3rd dose of Hepatitis B vaccine as per IAP schedule. Measles is also given with mumps & rubella vaccines as MMR. As measles vaccine can interfere with immunity, especially T cell immunity for 4-6 weeks, BCG should not be given along with it. Similarly no other vaccine should be given within 4-6 weeks of measles or MMR vaccine.
+    </p>
+  </div>
+{% endblock %}

@@ -1,0 +1,135 @@
+<!-- Extend base template -->
+{% extends 'base.html' %}
+
+<!-- Set active class for 'Home' menu item -->
+{% set active = "Home" %}
+
+<!-- Update page title with 'Home' -->
+{% block title %} Vaccination {% endblock %}
+
+<!-- Home page content -->
+{% block content %}
+  <div class="container-fluid vaccine-banner-area" id="front-page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1><span>Vaccine Reminder</span> & <span>Vaccine Schedule</span></h1>
+          <p>Keep track of your child's immunization records (history of the immunizations they've had and will have) up
+            to date and in a safe place!</p>
+          <a href="#">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-6">
+          <div class="card"><img class="card-img-top img-fluid" src="/static/images/banner-img.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid vaccine-feature" id="why-required">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="cover">
+            <div class="card">
+              <svg class="back-bg" width="100%" viewBox="0 0 900 700" style="position:absolute; z-index: -1">
+                <defs>
+                  <linearGradient id="PSgrad_01" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                    <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1" />
+                    <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1" />
+                  </linearGradient>
+                </defs>
+                <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_01)"
+                  d="M616.656,2.494 L89.351,98.948 C19.867,111.658 -16.508,176.639 7.408,240.130 L122.755,546.348 C141.761,596.806 203.597,623.407 259.843,609.597 L697.535,502.126 C748.221,489.680 783.967,441.432 777.751,392.742 L739.837,95.775 C732.096,35.145 677.715,-8.675 616.656,2.494 Z" />
+              </svg>
+              <svg width="100%" viewBox="0 0 700 500">
+                <clipPath id="clip-path">
+                  <path
+                    d="M89.479,0.180 L512.635,25.932 C568.395,29.326 603.115,76.927 590.357,129.078 L528.827,380.603 C518.688,422.048 472.661,448.814 427.190,443.300 L73.350,400.391 C32.374,395.422 -0.267,360.907 -0.002,322.064 L1.609,85.154 C1.938,36.786 40.481,-2.801 89.479,0.180 Z">
+                  </path>
+                </clipPath>
+                <image clip-path="url(#clip-path)" xlink:href="/static/images/reminder-and-schedule.png" width="100%" height="465"
+                  class="svg__image"></image>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h2> Why Does This Service Required? </h2>
+          <p> <strong>Over 2 Million children under the age of 5 die every year in India* and another 1 Million or more
+              are disabled for life.</strong> A major cause is that parents often forget to vaccinate the child on
+            time.Hence here we provide vaccine reminder so parents can remind before every due shot !!!</p>
+          <p> Vaccination reminder services in several countries have been effective in increasing compliance by 20%.
+            There are over 40 published scientific studies in the Cochrane database that prove the effectiveness of
+            vaccination reminders. </p>
+          <a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid vaccine-features" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2> Explore The Services<br /> We Offer For You </h2>
+          <p> The major goal of vaccination is to teach parents how to conveniently keep track of
+            their children's vaccinations.Many services are offered by Vaccination, including vaccine reminder, an
+            appropriate immunization schedule, information about vaccines, and ask doctor facilities.
+          </p>
+          <a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-lg-8">
+          <svg id="bg-services" width="100%" viewBox="0 0 1000 800">
+            <defs>
+              <linearGradient id="PSgrad_02" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1" />
+                <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1" />
+              </linearGradient>
+            </defs>
+            <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_02)"
+              d="M801.878,3.146 L116.381,128.537 C26.052,145.060 -21.235,229.535 9.856,312.073 L159.806,710.157 C184.515,775.753 264.901,810.334 338.020,792.380 L907.021,652.668 C972.912,636.489 1019.383,573.766 1011.301,510.470 L962.013,124.412 C951.950,45.594 881.254,-11.373 801.878,3.146 Z" />
+          </svg>
+          <div class="row">
+            <div class="col">
+              <div class="card text-center">
+                <div class="oval"><img class="card-img-top" src="/static/images/bell-regular.svg" alt="Reminder Icon"></div>
+                <div class="card-body">
+                  <h3 class="card-title">Vaccine Reminder</h3>
+                  <p class="card-text"> We provide vaccine reminder services through email to notify parents about
+                    immunization dates. </p>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="oval"><img class="card-img-top" src="/static/images/circle-info.svg" alt="Informative Icon"></div>
+                <div class="card-body">
+                  <h3 class="card-title">Vaccine Details</h3>
+                  <p class="card-text"> We do share vaccine details so that parents are educated about the facts
+                    regarding different immunizations. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center">
+                <div class="oval"><img class="card-img-top" src="/static/images/calendar-days-regular.svg" alt="Calendar Icon">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Vaccine Schedule</h3>
+                  <p class="card-text"> We administer an appropriate vaccine schedule in order to adhere to the
+                    immunization schedule. </p>
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="oval"><img class="card-img-top" src="/static/images/user-doctor.svg" alt="Doctor Icon"></div>
+                <div class="card-body">
+                  <h3 class="card-title">Ask Doctor</h3>
+                  <p class="card-text"> In order for parents to inquire about medical concerns, we offer ask doctor
+                    service available to them.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

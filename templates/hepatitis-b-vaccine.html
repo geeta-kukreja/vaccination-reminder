@@ -1,0 +1,36 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Hepatitis B vaccine Details' -->
+{% block title %} Hepatitis B Vaccine {% endblock %}
+
+<!-- Hepatitis B vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Hepatitis B Vaccine</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Hepatitis B virus (HBV) infection has been identified as a major public health problem worldwide and in India. A safe and effective vaccine to prevent from Hepatitis B (HepB) diseases is available for nearly 3 decades. The vaccine was first introduced in mid-1980 and became part of the recommended immunization schedule in the United States in early 1990's. Since then, the incidence of acute HepB has dropped by more than 95 percent in children and adolescents, and by more than 75 percent overall. At the global level, the epidemiology of the HBV is changing rapidly, as vaccination programs become the standard of health care. Of the 2.6 crore (26 million) infants born annually in India, approximately 10 lakh (one million) run a life time risk of developing chronic HBV infections. Nearly 170 World Health Organization (WHO) member countries have adopted a national policy of immunizing all infants at birth. Universal vaccination beginning at birth has been very effective in preventing perinatal transmission and reducing early viral exposures and the development of chronic HepB infection in children and adults. <br>
+      The world's first recombinant (r) HepB vaccine produced in single-antigen (HBsAg) formulation by recombinant DNA technology has been in use since 1986. The monovalent vaccines contain 10 to 40 &#956g of HBsAg protein/mL, and a completed 3-dose vaccination schedule at 0 - 1 and 6 months, results in minimum protective level of anti-HBs of at least 10 mIU/mL in most recipients, which provides long-term protection. Outside the US, other levels of antibody may be used to determine immunity. Although the concentration of rHBsAg protein differs among vaccine products, rates of seroprotection are probably equivalent when given to immunocompetent infants, children, adolescents, or young adults in the doses recommended.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Contraindications and Side Effects</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Hepatitis B vaccine is contraindicated in persons with a history of severe allergy to eggs or other vaccine components. Pregnancy, multiple sclerosis, Guillain-Barre syndrome, autoimmune diseases and other chronic diseases do not constitute a contraindication to vaccination. <br>
+      The hepatitis B vaccine is considered to be safe. The most common side effects include fever (1 - 6%) and pain at the injection site (3 - 29%). Administration of the first dose immediately after birth was not associated with a higher incidence of sepsis. A large cohort study demonstrated that the incidence of anaphylaxis after vaccine administration is 1.1 per 1 million vaccine doses.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Hepatitis B Vaccine - Conclusions</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      As shown above, the vaccine against hepatitis B is an effective, safe and cost-effective medical intervention which prevents hepatitis B infections. Despite this fact, there are several European countries (Great Britain and the Scandinavian countries) which do not have universal and compulsory vaccinations. These countries justify their decision by explaining that hepatitis B infection does not constitute a common problem there, therefore there is no indication to bear the financial burden of universal vaccination. In the developing countries, the faced financial problems and the need to strive for sanitation, hygiene policy, access to clean water and food have priority over the introduction of universal vaccination.
+    </p>
+  </div>
+{% endblock %}

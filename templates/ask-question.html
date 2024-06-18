@@ -1,0 +1,47 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Ask Question' menu item -->
+{% set active = "Ask Question" %}
+
+<!-- Update page title with 'Ask Question' -->
+{% block title %} Ask Question {% endblock %}
+
+<!-- Ask question page content -->
+{% block content %}
+  <div class="fh5co-narrow-content" style="margin-top:30px;">
+    <div class="vaccine-info">
+      <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-question-circle-o"
+          aria-hidden="true"></i>Ask Question</h2>
+      <p class="animate-box" data-animate-effect="fadeInLeft">
+        If parents have confusion regarding to any vaccine or any problem then they can ask us question.Kindly put in
+        detailed clinical features and investigations so that we are able to give you appropriate answers. In absence of
+        such vital information, answers to such questions would be inevitably incomplete.
+      </p>
+    </div>
+
+    <div class="row vaccine-form" id="ask-question-form">
+      <div class="col-md-6">
+        <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-edit"
+            aria-hidden="true"></i>Question Form</h2>
+        <form method="post" class="animate-box question-form" data-animate-effect="fadeInLeft">
+          <textarea class="form-control" name="question" placeholder="Your Question" required="required"></textarea>
+          <div class="form-group">
+            <button class="btn btn-primary" value="Send Message" type="submit">Send Message <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+            {% for message in get_flashed_messages() %}
+                <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-check"
+                                                                                          aria-hidden="true"></i>{{ message }}</h2>
+            {% endfor %}
+        </form>
+      </div>
+      <div class="col-md-6 vaccine-info">
+        <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-exclamation-triangle"
+            aria-hidden="true"></i>Note</h2>
+          <span style="font-weight:400;">*Kindly note that if we got proper solution then after we would like to send the
+            answer of your question on your <span style="border-bottom:1px solid black;">email address</span>.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

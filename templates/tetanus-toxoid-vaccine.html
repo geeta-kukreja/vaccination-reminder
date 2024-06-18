@@ -1,0 +1,33 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Tetanus Toxoid Vaccine' -->
+{% block title %} Tetanus Toxoid Vaccine {% endblock %}
+
+<!-- Tetanus Toxoid vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Tetanus Toxoid - Patient Education</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      <b>What is tetanus toxoid?</b> <br>
+      Tetanus toxoid is a vaccine that protects against tetanus. It was routinely used for children grather than 10 years of age to boost their immunity after completion of their primary immunization in childhood. It was subsequently given every 10 years thereafter. However, now with availability of Tdap it is not given as booster doses. It is now recommended for immunization in pregnant women to prevent tetanus in their babies and in patients who get a trauma and wound. <br>
+      <b>When is TT given to pregnant women?</b> <br>
+      A lady who is previously unimmunised should receive 3 doses of TT during pregnancy at 1-month interval starting the first dose at 28 weeks. The last dose should be at least 30 days prior to the expected date of delivery so that there is enough time for good antibody titres to develop in mother & for it to be passed on to the fetus to prevent tetanus in newborn. During repeat pregnancy, 2 doses of TT are given at 4 weeks interval. Again the last dose is given at least 30 days before delivery. <br>
+      <b>When is TT given to an adult with injury?</b> <br>
+      An adult who has never received or has received incomplete course of TT before in life should be given 3 doses of TT at 4 weeks interval followed by a booster after 1 year & then every 5 years. If he then develops any injury or requires any surgery there is no need to take anymore TT as he is protected in between the doses. If such an adult has taken the last TT beyond 4-5 years in past, he can be given one dose of TT, which acts as a booster. It is neither required nor desirable or safe to give TT for each and every injury every now & then in such a protected person. <br>
+      <b>What if the child gets injured, should he receive TT?</b> <br>
+      A child who has received 3 primary doses of DPT/DT is protected till 15 months of age & does not need TT. If he is 15-18 months of age he should receive his first 1st booster of DPT which will also boost up anti-tetanus immunity. If he is between 4-6 years he should receive his 2nd booster of DPT which will boost up his anti-tetanus immunity too. Such a child is now protected till 10 years of age. After this a booster of TdaP is given at 10years, & every 10 years thereafter. In between such doses there is no need to give TT for injury.<br>
+      <b>What harm is done if one gives TT frequently? </b><br>
+      If TT is given frequently, it will hyper-immunize the patient. Such a patient can develop fever, rash, joint pain, joint swelling etc. Hence it is not desirable to give frequent injections of TT in an otherwise immunized patient.
+    </p>
+  </div>
+{% endblock %}

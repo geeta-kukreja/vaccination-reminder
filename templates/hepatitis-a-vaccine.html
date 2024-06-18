@@ -1,0 +1,40 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Hepatitis A Vaccine' -->
+{% block title %} Hepatitis A Vaccine {% endblock %}
+
+<!-- Hepatitis A vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;&nbsp;Clinical & Epidemiological Background</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Hepatitis A virus (HAV) is the most common cause of viral hepatitis worldwide. In resource-limited countries, most people are infected during the first decade of life, but incidence of disease attributable to HAV has declined significantly since hepatitis A vaccine was first licensed in Europe in 1991 and the United States in 1995. <br>
+      Almost always childhood infection is anicteric and asymptomatic, resulting lifelong protective immunity. In contrast, infection acquired during adolescent and adult are symptomatic and typically lasts several weeks, with jaundice occurring in 70% or more; although 10% to 15% of symptomatic people have prolonged or relapsing disease lasting as long as 6 months. A member of the Picornaviridae family, HAV has only one serotype. Chronic infection does not occur. Fulminant hepatitis is rare but is more common in people with underlying liver disease.<br>
+      Unlike hepatitis B (HBV) and C (HCV) viruses, HAV is spread primarily through the fecal-oral route, carried via the bloodstream to its primary target, the hepatocyte, where it replicates robustly but without causing much damage to the cells. Newly made virus is released via the bile ducts secreted into the intestines and stool. Being mostly asymptomatic and having longer fecal shedding of virus, both Infants and children have remained the primary reservoir of HAV and are a source of infection for vulnerable adults.<br>
+      HAV infection is more likely to result in significant liver disease in individuals coinfected with HBV or HCV or HEV, patients waiting for or having undergone liver transplantation, pregnant women, and people infected with HIV infection. HAV has been identified as the most common cause of acute hepatitis and the disease may be prolonged for months and has a particularly high mortality rate in the presence of chronic liver disease. For these high-risk populations, not only is the acute infection more severe, but the immune response to HAV vaccination is relatively poor. Hence, it is imperative to vaccinate patients at special risk early, before they have suffered significant hepatic damage from their underlying disease.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;&nbsp;The Major Methods of Prevention of HAV Infections</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      &#8658; Personal hand hygiene.<br>
+      &#8658; Improved sanitation (eg, in food preparation and of water sources)<br>
+      &#8658; Immunization with hepatitis A vaccine.<br>
+      &#8658; Standard Immune globulin (IGIM) are recommended for post-exposure prophylaxis for unimmunized patients.<br>
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>&nbsp;&nbsp;Hepatitis A Vaccine - Conclusion</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Even though we have effective vaccines against HAV, we should not forget the importance of cleanliness. The virus, excreted in feces, often is spread through contaminated waters, but food in restaurant and child care center, kitchens handled by infected workers who have not washed properly also is a common source of outbreaks. Fruits and vegetables, salads, cold cuts and sandwiches, milk, and juices all have been implicated in HAV infection. Hand washing really is cost effective!
+    </p>
+  </div>
+{% endblock %}

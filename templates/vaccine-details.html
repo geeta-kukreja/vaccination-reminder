@@ -1,0 +1,45 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Vaccine Details' -->
+{% block title %} Vaccine Details {% endblock %}
+
+<!-- Vaccine Details page content -->
+{% block content %}
+  <div class="fh5co-narrow-content vaccine-list">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">
+      <i class="fa fa-medkit" aria-hidden="true"></i>Vaccine Information
+    </h2>
+    <ul class="animate-box" data-animate-effect="fadeInLeft">
+      <li><a href="/vaccine-details/bcg-vaccine" title="BCG Vaccine">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>BCG Vaccine</a></li>
+      <li><a href="/vaccine-details/polio-vaccine" title="Polio Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>Polio Vaccine</a></li>
+      <li><a href="/vaccine-details/hepatitis-a-vaccine" title="Hepatitis A Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>Hepatitis A Vaccine</a></li>
+      <li><a href="/vaccine-details/hepatitis-b-vaccine" title="Hepatitis B Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>Hepatitis B Vaccine</a></li>
+      <li><a href="/vaccine-details/dpt-vaccine" title="DPT Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>DPT Vaccine</a></li>
+      <li><a href="/vaccine-details/hib-vaccine" title="HIB Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>HIB Vaccine</a></li>
+      <li><a href="/vaccine-details/chickenpox-vaccine" title="Chickenpox Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>Chickenpox Vaccine</a></li>
+      <li><a href="/vaccine-details/measles-vaccine" title="Measles Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>Measles Vaccine</a></li>
+      <li><a href="/vaccine-details/mmr-vaccine" title="MMR Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>MMR Vaccine</a></li>
+      <li><a href="/vaccine-details/rotavirus-vaccine" title="Rotavirus Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>Rotavirus Vaccine</a></li>
+      <li><a href="/vaccine-details/typhoid-vaccine" title="Typhoid Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>Typhoid Vaccine</a></li>
+      <li><a href="/vaccine-details/pneumococcal-vaccine" title="Pneumococcal Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>Pneumococcal Vaccine</a></li>
+      <li><a href="/vaccine-details/tetanus-toxoid-vaccine" title="Tetanus Toxoid Vaccine"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>Tetanus Toxoid Vaccine</a></li>
+    </ul>
+  </div>
+{% endblock %}

@@ -1,0 +1,53 @@
+<!-- Extend base template -->
+{% extends 'base.html' %}
+
+<!-- Set active class for 'About' menu item -->
+{% set active = "About" %}
+
+<!-- Update page title with 'About' -->
+{% block title %} About {% endblock %}
+
+<!-- About page content -->
+{% block content %}
+  <div class="container-fluid page-content">
+    <div class="container">
+      <div class="row page-header">
+        <div class="col-md-12">
+          <h1><span>About Us</span></h1>
+          <p>Our major goal is to provide parents with the simplest method so they can easily keep track of their
+            child's vaccinations since there are so many factors that make it difficult for parents to discover the
+            simplest approach to safeguard their children from diseases.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid vaccine-our-team">
+    <div class="container">
+      <h2>Meet the team</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card text-center"><img class="card-img-top" src="/static/images/user-doctor.svg" alt="Developer Image">
+            <div class="card-body">
+              <h5>Geeta Kukreja <br />
+                <span> Developer </span>
+              </h5>
+              <p class="card-text">“ Geeta is a computer science graduate student at Drexel University. She has held both the roles of designer and developer. ” </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-6">
+          <div class="card text-center"><img class="card-img-top" src="/static/images/user-doctor.svg" alt="Developer Image">
+            <div class="card-body">
+              <h5>Nisarg Patel<br />
+                <span> Developer </span>
+              </h5>
+              <p class="card-text">“ Nisarg is a software engineering graduate student at Drexel University. He has held both the roles of designer and developer. ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

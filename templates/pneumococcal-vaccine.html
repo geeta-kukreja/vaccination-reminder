@@ -1,0 +1,51 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Pneumococcal Vaccine' -->
+{% block title %} Pneumococcal Vaccine {% endblock %}
+
+<!-- Pneumococcal vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Clinical Background</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Streptococcus pneumoniae (commonly referred to as pneumococcus) is a major cause of serious illness and death worldwide. The biggest burden of pneumococcal childhood infections is in children living in the developing world, especially in Africa & India. Infection is predominantly of the respiratory tract (acute otitis media-AOM, sinusitis, and pneumonia); however, invasive pneumococcal diseases (IPDs) may occur in the form of bacteremia, sepsis, meningitis, or other organ systems involvement (e.g., peritonitis, or hemolytic uremic syndrome). Based on recent estimates, more than 65,000 Indian children died from pneumococcal disease in 2012.<br>
+      The spectrum of pneumococcal disease (PD) severity can vary from mild to life-threatening in healthy and immunocompromised hosts alike. . Prior to use of vaccinations , the World Health Organization (WHO) estimates that 0.7 to 1 million global pneumococcal deaths and 14.5 million global pneumococcal cases per year occurred in children (uninfected with HIV) younger than 5 years, in 2000. The exact disease burden in India continues to be challenging and remained undiminished and there has been and no descriptive published data available at national level, unfortunately. <br>
+      The rationale for childhood immunization is to protect children against life-threatening IPDs such as sepsis, meningitis, bacteremic pneumonia, and etc. Pediatricians and primary care practitioners' advocates pneumococcal vaccines which are not adopted in the universal immunization program at national level. There is no ongoing comprehensive PD surveillance nor on the prevalence and distribution of different serotypes (STs) causing IPDs in India. Nonetheless, a limited number of STs causes most IPDs worldwide. The STs included in existing pneumococcal vaccines are responsible for 49-88% of deaths in developing countries of Africa and Asia where PD morbidity and mortality remains the highest.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Historical Background</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Contrasting to the "immunization-success story" that is being achieved with a single serotype Haemophilus influenzae type b (Hib) vaccine, the pneumococcus prevention is difficult and burdensome. The PDs are caused by grather than 90 STs on the basis of its unique polysaccharide antigenic capsules to induce type-specific antibodies that enhanced opsonization, phagocytosis, and killing of S. pneumoniae.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Types of Pneumococcal Vaccines</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      There are currently two kinds (Polysaccharide & Conjugated type) of licensed pneumococcal vaccines for clinical use.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Precautions and Contraindications</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Before administering, vaccination-providers should consult the package insert for precautions, warnings, and contraindications. With PCV (the vaccine recommended for young children) and PPSV (the vaccine for adults and older children), the risk of serious harm is extremely small. Vaccination is contraindicated in persons known to have a severe allergic reaction (e.g., anaphylaxis) to any component of PCV & PPSV23. <br>
+      The most commonly reported adverse reactions are local reactions of injection site, pain, redness, or swelling in addition to irritability, decreased appetite, or impaired sleep. Fever may occur within the first 1 to 2 days after injections, particularly after use of conjugate vaccine. Other systemic reactions include fatigue, headache, chills, decreased appetite, and generalized muscle pain. Adverse events occurring after administration of any vaccine should be reported to the hospital Infection Control & Prevention officer. Reporting adverse event following immunization (AEFI) is a critical component of immunization program and this is still at embryonic & evolving stage in India.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Pneumococcal Vaccine -Summary</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      &#8658; PCV13 is ideal & recommended routinely for all children 2-71 months of age and should be the vaccine of choice in India, provided its cost gets lower in line with other vaccines. <br>
+      &#8658; In healthy children 6 through 18 years of age due to their low risk of IPD, PCV13 is not recommended routinely. However, children with high risk conditions are eligible for vaccination; gets a single dose of PCV13 regardless of whether they have received before the PCV 7 or the PPSV23 vaccine.<br>
+      &#8658; Vaccine is indicated for 19 years of age and older with immunocompromising conditions.<br>
+      &#8658; For adults aged 50 through 64 years of age and older: both PCV13 and PPSV23 should be given. If the patient has already received PPSV23, administer PCV13 at least 1 year later.<br>
+      &#8658; Vaccination of persons with high-risk conditions is recommended with PCV13 and PPSV23: Almost 40% of IPD in these high risk person was cause by pneumococcal serotypes in PCV 13 and another 33% was caused by serotype in PPSV23 that are not in the PCV13.<br>
+    </p>
+  </div>
+{% endblock %}

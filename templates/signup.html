@@ -1,0 +1,46 @@
+<!-- Extend base template -->
+{% extends 'base.html' %}
+
+<!-- Set active class for 'About' menu item -->
+{% set active = "Signup" %}
+
+<!-- Update page title with 'Signup' -->
+{% block title %} Signup {% endblock %}
+
+<!-- About page content -->
+{% block content %}
+<div class="container-fluid page-content">
+  <div class="container">
+    <div class="row page-header">
+      <div class="col-md-12">
+        <h1><span>Sign Up</span></h1>
+        <p>Register to receive a vaccination schedule based on date of birth, and be reminded before each due shot by
+          email.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{#    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"#}
+<div class="container-fluid vaccine-form" id="signup-form">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-6">
+        <form method="post">
+          <input type="text" class="form-control" name="name"  placeholder="Child Name" required="required">
+          <input type="email" id="email" class="form-control" name="email" placeholder="Email Address" required="required">
+          <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+          <input type="password" class="form-control" name="confirm password" placeholder="Confirm Password" required="required">
+          <input type="tel" class="form-control" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="Phone"
+            required="required">
+          <input type="text" id="date" class="form-control" name="birthday" placeholder="Child's Birthdate" required="required">
+          <div class="form-group">
+            <button class="btn btn-primary" value="Log In" type="submit" >Create Account <i class="fa fa-angle-right"
+                aria-hidden="true"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

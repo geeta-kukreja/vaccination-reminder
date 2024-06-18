@@ -1,0 +1,449 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Calendar Schedule' menu item -->
+{% set active = "Calendar Schedule" %}
+
+<!-- Update page title with 'Calendar Schedule' -->
+{% block title %} Calendar Schedule {% endblock %}
+
+<!-- Load calendarSchedule JS -->
+{% block header %}
+  <script src="/static/js/calendarSchedule.js"></script>
+{% endblock %}
+
+<!-- Calendar Schedule page content -->
+{% block content %}
+  <div class="row fh5co-narrow-content vaccine-list">
+    <h2 class="fh5co-heading animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" style="margin-bottom:40px;">
+      <i class="fa fa-calendar" aria-hidden="true"></i>Date Wise Schedule</h2>
+    <div class="col-md-9 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft" style="padding-left: 0;">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">{{ vaccineDates[0] }} (At Birth)</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div bcg_1"></div>
+                <span class="panel-content-span">BCG - Dose 1</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div hep_b_1"></div>
+                <span class="panel-content-span">HEP B - Dose 1</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div opv_1"></div>
+                <span class="panel-content-span">OPV - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">{{ vaccineDates[1] }} (After 1 month and 12 days)</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div hep_b_2"></div>
+                <span class="panel-content-span">HEP B - Dose 2</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div opv_2"></div>
+                <span class="panel-content-span">OPV - Dose 2</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div dpt_1"></div>
+                <span class="panel-content-span">DPT - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">{{ vaccineDates[2] }} (After 1 month and 15 days)</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div ipv_1"></div>
+                <span class="panel-content-span">IPV - Dose 1</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div pneumococcal_1"></div>
+                <span class="panel-content-span">PNEUMOCOCCAL - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">{{ vaccineDates[3] }} (After 2 months)</a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div rotavirus_1"></div>
+                <span class="panel-content-span">ROTAVIRUS - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">{{ vaccineDates[4] }}(After 2 months and 10 days)</a>
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div opv_3"></div>
+                <span class="panel-content-span">OPV - Dose 3</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div dpt_2"></div>
+                <span class="panel-content-span">DPT - Dose 2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">{{ vaccineDates[5] }} (After 2 months and 16 days)</a>
+            </h4>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div ipv_2"></div>
+                <span class="panel-content-span">IPV - Dose 2</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div pneumococcal_2"></div>
+                <span class="panel-content-span">PNEUMOCOCCAL - Dose 2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">{{ vaccineDates[6] }}(After 3 months and 8 days)</a>
+            </h4>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div opv_4"></div>
+                <span class="panel-content-span">OPV - Dose 4</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div dpt_3"></div>
+                <span class="panel-content-span">DPT - Dose 3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">{{ vaccineDates[7] }} (After 3 months and 15 days)</a>
+            </h4>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div ipv_3"></div>
+                <span class="panel-content-span">IPV - Dose 3</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div pneumococcal_3"></div>
+                <span class="panel-content-span">PNEUMOCOCCAL - Dose 3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">{{ vaccineDates[8] }} (After 4 months)</a>
+            </h4>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div hib_1"></div>
+                <span class="panel-content-span">HIB - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">{{ vaccineDates[9] }} (After 4 months and 15 days)</a>
+            </h4>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div rotavirus_2"></div>
+                <span class="panel-content-span">ROTAVIRUS - Dose 2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">{{ vaccineDates[10] }} (After 4 months and 24 days)</a>
+            </h4>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div opv_5"></div>
+                <span class="panel-content-span">OPV - Dose 5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">{{ vaccineDates[11] }} (After 6 months)</a>
+            </h4>
+          </div>
+          <div id="collapse12" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div hep_b_3"></div>
+                <span class="panel-content-span">HEP B - Dose 3</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div hib_2"></div>
+                <span class="panel-content-span">HIB - Dose 2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">{{ vaccineDates[12] }} (After 8 months)</a>
+            </h4>
+          </div>
+          <div id="collapse13" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div hib_3"></div>
+                <span class="panel-content-span">HIB - Dose 3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">{{ vaccineDates[13] }} (After 9 month)</a>
+            </h4>
+          </div>
+          <div id="collapse14" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div measles_1"></div>
+                <span class="panel-content-span">MEASLES - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">{{ vaccineDates[14] }} (After 1 Year)</a>
+            </h4>
+          </div>
+          <div id="collapse15" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div hep_a_1"></div>
+                <span class="panel-content-span">HEP A - Dose 1</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div chickenpox_1"></div>
+                <span class="panel-content-span">CHICKENPOX - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">{{ vaccineDates[15] }} (After 1 Year and 35 days)</a>
+            </h4>
+          </div>
+          <div id="collapse16" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div hep_a_2"></div>
+                <span class="panel-content-span">HEP A - Dose 2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">{{ vaccineDates[16] }} (After 1 Year, 4 months and 15 days)</a>
+            </h4>
+          </div>
+          <div id="collapse17" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div mmr_1"></div>
+                <span class="panel-content-span">MMR - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">{{ vaccineDates[17] }} (After 1 Year and 6 months)</a>
+            </h4>
+          </div>
+          <div id="collapse18" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div hep_a_3"></div>
+                <span class="panel-content-span">HEP A - Dose 3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">{{ vaccineDates[18] }} (After 1 Year and 9 months)</a>
+            </h4>
+          </div>
+          <div id="collapse19" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div dpt_booster_dose_1"></div>
+                <span class="panel-content-span">DPT - Booster Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">{{ vaccineDates[19] }} (After 1 Year, 10 months and 15 days)</a>
+            </h4>
+          </div>
+          <div id="collapse20" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div opv_booster_dose_1"></div>
+                <span class="panel-content-span">OPV - Booster Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">{{ vaccineDates[20] }} (After 2 Years)</a>
+            </h4>
+          </div>
+          <div id="collapse21" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div typhoid_1"></div>
+                <span class="panel-content-span">TYPHOID - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse22">{{ vaccineDates[21] }} (After 5 Years)</a>
+            </h4>
+          </div>
+          <div id="collapse22" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div opv_booster_dose_2"></div>
+                <span class="panel-content-span">OPV - Booster Dose 2</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div dpt_booster_dose_2"></div>
+                <span class="panel-content-span">DPT - Booster Dose 2</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse23">{{ vaccineDates[22] }} (After 10 Years)</a>
+            </h4>
+          </div>
+          <div id="collapse23" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="panel-content">
+                <div class="panel-content-div td_vac_1"></div>
+                <span class="panel-content-span">TD VAC - Dose 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(() => {
+      const calendarSchedule = new CalendarSchedule();
+      calendarSchedule.load();
+    });
+  </script>
+{% endblock %}

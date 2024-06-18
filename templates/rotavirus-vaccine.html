@@ -1,0 +1,43 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Rotavirus Vaccine' -->
+{% block title %} Rotavirus Vaccine {% endblock %}
+
+<!-- Rotavirus vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Introduction</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Diarrhea is second leading cause of death only surpass by respiratory tract infections (RTI) and pneumonia, constituting 17% of all under five mortality world wide.It is estimated that incidence of diarrhea in India is 1.71 episodes/ person /year in rural India and 1.09 episodes/person /year in urban India.<br>
+      Rotavirus is a wheel like icosahedral reoviridae double stranded RNA virus. It is subdivided into serogroup A-G and sub group 1 or 2. Group A rotavirus causes most of the human diseases. The outer viral capsid is made of protein VP7 (which determine G serotype) and VP4 (which determine P serotype). Each rotavirus is designated by G serotype and P serotype followed by P genotype in bracket e.g. G1P1A[8]. G1-4 and G9 are predominant 5 strains in USA and responsible for 90% of rotavirus gastroenteritis (RVGE). Out of these infecting strains, G1 causes 75% of disease. It is very stable and may remain viable if not disinfected. Rotavirus causes diarrhea in maximum among children in age 6-32 month and 13.3% of rotavirus infection involve children less than 6 months. Rotavirus diarrhea is markedly seasonal in temperate climate with peak incidence occurring in the spring and winter season.Rotavirus spreads through feco-oral spread, close person to person contact and by fomites.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Dosing Schedule</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Monovalent live vaccine (RV1) is given orally in two doses minimum 4 weeks apart. It is provided as a lyophilized powder that is reconstituted just before administration. Each reconstituted 1 ml dose of vaccine contains at least 106 median culture infective dose (CCID50) of live attenuated virus G1P1[8] and no preservative. It can be given after 6 weeks and not after 12 weeks and completed prior to 32 weeks. Recently FDA has extended the deadline of first dose up to 14 weeks and 6 days. IAP recommends first dose at 10 weeks and second dose at 14 weeks due to interference with OPV. <br>
+      Pentavalent live vaccine (RV5) (Rotateq by MSD) is given orally in 3 doses at age 2 , 4 and 6 months. First dose should be given between age 6-12 weeks and subsequent at 4-8 weeks interval. First dose can be extended up to 14 week and 6 days (recent FDA approval). All doses should be completed before 32 weeks.<br>
+      In case a dose is missed, it is not necessary to restart the course but it should be completed within the time frame. In preterm stable newborn if he has completed 6 weeks, is clinically stable and discharged from NICU, rotavirus vaccine can be given.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Storage and Administration</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Rotavirus vaccines are stored at 2-8 degree C and is protected from light. Monovalent rotavirus vaccine can be stored at room temperature. Do not freeze the diluents or vaccine. Monovalent vaccine (RV1) can be administered within 24 hours of reconstitution, but pentavalent vaccine (RV5) should be used immediately after reconstitution.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Side Effects and Contraindications</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Both rotavirus vaccines are safe and well tolerated with occasional vomiting, diarrhea. Intussusception incidence is not increased but caution is recommended in children with uncorrected congenital malformation of GI tract which predispose to intussusception. The vaccine is contraindicated in infant who has history of severe allergy (e.g. anaphylaxis) to rotavirus vaccine previously. Human monovalent vaccine oral applicator contains latex hence this is contraindicated in infant with severe latex allergy.<br>
+      The vaccines should not be given in children with history of previous intussusceptions or immunodeficiency.
+    </p>
+  </div>
+{% endblock %}

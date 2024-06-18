@@ -1,0 +1,723 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Schedule' menu item -->
+{% set active = "Vaccine Schedule" %}
+
+<!-- Update page title with 'Vaccine Schedule' -->
+{% block title %} Vaccine Schedule {% endblock %}
+
+<!-- Load vaccineUpdate JS -->
+{% block header %}
+  <script src="/static/js/vaccineUpdate.js"></script>
+{% endblock %}
+
+<!-- Vaccine Schedule page content -->
+{% block content %}
+  <div class="fh5co-narrow-content vaccine-list table-responsive" style="overflow-x:auto;">
+    <h2 class="fh5co-heading animate-box" style="margin-bottom:20px;" data-animate-effect="fadeInLeft"><i
+        class="fa fa-th" aria-hidden="true"></i>Vaccination Schedule</h2>
+    <div class="main-inst animate-box" data-animate-effect="fadeInLeft">
+      <div class="sub-inst">
+        <div class="sub-inst-div" style="background-color:#99e999;"></div>
+        <span class="sub-inst-span">Given Vaccine</span>
+      </div>
+      <div class="sub-inst">
+        <div class="sub-inst-div" style="background-color:#ff7676;"></div>
+        <span class="sub-inst-span">Not Given Vaccine</span>
+      </div>
+      <div class="sub-inst">
+        <div class="sub-inst-div" style="background-color:#ffd27f;"></div>
+        <span class="sub-inst-span">Upcoming Vaccine</span>
+      </div>
+    </div>
+    <table class="animate-box table fadeInLeft animated" data-animate-effect="fadeInLeft">
+      <tbody>
+        <tr>
+          <th>Vaccine Date<br>(DD/MM/YYYY)</th>
+          <th rowspan="2">{{ vaccineDates[0] }}</th>
+          <th rowspan="2">{{ vaccineDates[1] }}</th>
+          <th rowspan="2">{{ vaccineDates[2] }}</th>
+          <th rowspan="2">{{ vaccineDates[3] }}</th>
+          <th rowspan="2">{{ vaccineDates[4] }}</th>
+          <th rowspan="2">{{ vaccineDates[5] }}</th>
+          <th rowspan="2">{{ vaccineDates[6] }}</th>
+          <th rowspan="2">{{ vaccineDates[7] }}</th>
+          <th rowspan="2">{{ vaccineDates[8] }}</th>
+          <th rowspan="2">{{ vaccineDates[9] }}</th>
+          <th rowspan="2">{{ vaccineDates[10] }}</th>
+          <th rowspan="2">{{ vaccineDates[11] }}</th>
+          <th rowspan="2">{{ vaccineDates[12] }}</th>
+          <th rowspan="2">{{ vaccineDates[13] }}</th>
+          <th rowspan="2">{{ vaccineDates[14] }}</th>
+          <th rowspan="2">{{ vaccineDates[15] }}</th>
+          <th rowspan="2">{{ vaccineDates[16] }}</th>
+          <th rowspan="2">{{ vaccineDates[17] }}</th>
+          <th rowspan="2">{{ vaccineDates[18] }}</th>
+          <th rowspan="2">{{ vaccineDates[19] }}</th>
+          <th rowspan="2">{{ vaccineDates[20] }}</th>
+          <th rowspan="2">{{ vaccineDates[21] }}</th>
+          <th rowspan="2">{{ vaccineDates[22] }}</th>
+        </tr>
+        <tr>
+          <th>Vaccine Name</th>
+        </tr>
+        <tr>
+          <th>BCG</th>
+          <td class="dropdown firstdate bcg_1_parent">Dose 1
+            <div class="dropdown-content bcg_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return bcg_1();" class="given bcg_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return bcg_0();" class="notgiven bcg_1_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>HEP B</th>
+          <td class="dropdown firstdate hep_b_1_parent">Dose 1
+            <div class="dropdown-content hep_b_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return hep_b_11();" class="given hep_b_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return hep_b_10();" class="notgiven hep_b_1_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td class="dropdown seconddate hep_b_2_parent">Dose 2
+            <div class="dropdown-content hep_b_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return hep_b_21();" class="given hep_b_2_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return hep_b_20();" class="notgiven hep_b_2_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown twelfthdate hep_b_3_parent">Dose 3
+            <div class="dropdown-content hep_b_3_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return hep_b_31();" class="given hep_b_3_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return hep_b_30();" class="notgiven hep_b_3_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>OPV</th>
+          <td class="dropdown firstdate opv_1_parent">Dose 1
+            <div class="dropdown-content opv_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return opv_11();" class="given opv_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return opv_10();" class="notgiven opv_1_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td class="dropdown seconddate opv_2_parent">Dose 2
+            <div class="dropdown-content opv_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return opv_21();" class="given opv_2_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return opv_20();" class="notgiven opv_2_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="dropdown fifthdate opv_3_parent">Dose 3
+            <div class="dropdown-content opv_3_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return opv_31();" class="given opv_3_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return opv_30();" class="notgiven opv_3_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td class="dropdown seventhdate opv_4_parent">Dose 4
+            <div class="dropdown-content opv_4_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return opv_41();" class="given opv_4_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return opv_40();" class="notgiven opv_4_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown eleventhdate opv_5_parent">Dose 5
+            <div class="dropdown-content opv_5_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return opv_51();" class="given opv_5_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return opv_50();" class="notgiven opv_5_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown twentiethdate opv_booster_dose_1_parent">
+            Booster Dose
+            <div class="dropdown-content opv_booster_dose_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return opv_booster_dose_11();" class="given opv_booster_dose_1_given">Yes Given &nbsp; <i
+                  class="fa fa-check" aria-hidden="true"></i></a>
+              <a onclick="return opv_booster_dose_10();" class="notgiven opv_booster_dose_1_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td class="dropdown twentyseconddate opv_booster_dose_2_parent">
+            Booster Dose
+            <div class="dropdown-content opv_booster_dose_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return opv_booster_dose_21();" class="given opv_booster_dose_2_given">Yes Given &nbsp; <i
+                  class="fa fa-check" aria-hidden="true"></i></a>
+              <a onclick="return opv_booster_dose_20();" class="notgiven opv_booster_dose_2_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>DPT</th>
+          <td></td>
+          <td class="dropdown seconddate dpt_1_parent">Dose 1
+            <div class="dropdown-content dpt_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return dpt_11();" class="given dpt_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return dpt_10();" class="notgiven dpt_1_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="dropdown fifthdate dpt_2_parent">Dose 2
+            <div class="dropdown-content dpt_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return dpt_21();" class="given dpt_2_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return dpt_20();" class="notgiven dpt_2_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td class="dropdown seventhdate dpt_3_parent">Dose 3
+            <div class="dropdown-content dpt_3_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return dpt_31();" class="given dpt_3_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return dpt_30();" class="notgiven dpt_3_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown nineteenthdate dpt_booster_dose_1_parent">
+            Booster Dose
+            <div class="dropdown-content dpt_booster_dose_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return dpt_booster_dose_11();" class="given dpt_booster_dose_1_given">Yes Given &nbsp; <i
+                  class="fa fa-check" aria-hidden="true"></i></a>
+              <a onclick="return dpt_booster_dose_10();" class="notgiven dpt_booster_dose_1_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="dropdown twentyseconddate dpt_booster_dose_2_parent">
+            Booster Dose
+            <div class="dropdown-content dpt_booster_dose_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return dpt_booster_dose_21();" class="given dpt_booster_dose_2_given">Yes Given &nbsp; <i
+                  class="fa fa-check" aria-hidden="true"></i></a>
+              <a onclick="return dpt_booster_dose_20();" class="notgiven dpt_booster_dose_2_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>HEP A</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown fifteenthdate hep_a_1_parent">Dose 1
+            <div class="dropdown-content hep_a_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return hep_a_11();" class="given hep_a_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return hep_a_10();" class="notgiven hep_a_1_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td class="dropdown sixteenthdate hep_a_2_parent">Dose 2
+            <div class="dropdown-content hep_a_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return hep_a_21();" class="given hep_a_2_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return hep_a_20();" class="notgiven hep_a_2_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td class="dropdown eighteenthdate hep_a_3_parent">Dose 3
+            <div class="dropdown-content hep_a_3_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return hep_a_31();" class="given hep_a_3_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return hep_a_30();" class="notgiven hep_a_3_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>IPV</th>
+          <td></td>
+          <td></td>
+          <td class="dropdown thirddate ipv_1_parent">Dose 1
+            <div class="dropdown-content ipv_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return ipv_11();" class="given ipv_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return ipv_10();" class="notgiven ipv_1_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="dropdown sixthdate ipv_2_parent">Dose 2
+            <div class="dropdown-content ipv_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return ipv_21();" class="given ipv_2_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return ipv_20();" class="notgiven ipv_2_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td class="dropdown eighthdate ipv_3_parent">Dose 3
+            <div class="dropdown-content ipv_3_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return ipv_31();" class="given ipv_3_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return ipv_30();" class="notgiven ipv_3_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>PNEUMOCOCCAL</th>
+          <td></td>
+          <td></td>
+          <td class="dropdown thirddate pneumococcal_1_parent">Dose 1
+            <div class="dropdown-content pneumococcal_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return pneumococcal_11();" class="given pneumococcal_1_given">Yes Given &nbsp; <i
+                  class="fa fa-check" aria-hidden="true"></i></a>
+              <a onclick="return pneumococcal_10();" class="notgiven pneumococcal_1_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="dropdown sixthdate pneumococcal_2_parent">Dose 2
+            <div class="dropdown-content pneumococcal_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return pneumococcal_21();" class="given pneumococcal_2_given">Yes Given &nbsp; <i
+                  class="fa fa-check" aria-hidden="true"></i></a>
+              <a onclick="return pneumococcal_20();" class="notgiven pneumococcal_2_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td class="dropdown eighthdate pneumococcal_3_parent">Dose 3
+            <div class="dropdown-content pneumococcal_3_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return pneumococcal_31();" class="given pneumococcal_3_given">Yes Given &nbsp; <i
+                  class="fa fa-check" aria-hidden="true"></i></a>
+              <a onclick="return pneumococcal_30();" class="notgiven pneumococcal_3_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>HIB</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown ninethdate hib_1_parent">Dose 1
+            <div class="dropdown-content hib_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return hib_11();" class="given hib_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return hib_10();" class="notgiven hib_1_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td class="dropdown twelfthdate hib_2_parent">Dose 2
+            <div class="dropdown-content hib_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return hib_21();" class="given hib_2_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return hib_20();" class="notgiven hib_2_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td class="dropdown thirteenthdate hib_3_parent">Dose 3
+            <div class="dropdown-content hib_3_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return hib_31();" class="given hib_3_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return hib_30();" class="notgiven hib_3_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>ROTAVIRUS</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown fourthdate rotavirus_1_parent">Dose 1
+            <div class="dropdown-content rotavirus_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return rotavirus_11();" class="given rotavirus_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return rotavirus_10();" class="notgiven rotavirus_1_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown tenthdate rotavirus_2_parent">Dose 2
+            <div class="dropdown-content rotavirus_2_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return rotavirus_21();" class="given rotavirus_2_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return rotavirus_20();" class="notgiven rotavirus_2_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>MEASLES</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown fourteenthdate measles_1_parent">Dose 1
+            <div class="dropdown-content measles_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return measles_11();" class="given measles_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return measles_10();" class="notgiven measles_1_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>CHICKENPOX</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown fifteenthdate chickenpox_1_parent">Dose 1
+            <div class="dropdown-content chickenpox_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return chickenpox_11();" class="given chickenpox_1_given">Yes Given &nbsp; <i
+                  class="fa fa-check" aria-hidden="true"></i></a>
+              <a onclick="return chickenpox_10();" class="notgiven chickenpox_1_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>MMR</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown seventeenthdate mmr_1_parent">Dose 1
+            <div class="dropdown-content mmr_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return mmr_11();" class="given mmr_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return mmr_10();" class="notgiven mmr_1_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>TYPHOID</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown twentyfirstdate typhoid_1_parent">Dose 1
+            <div class="dropdown-content typhoid_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return typhoid_11();" class="given typhoid_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return typhoid_10();" class="notgiven typhoid_1_notgiven">Not Given &nbsp; <i
+                  class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>TD VAC</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="dropdown twentythirddate td_vac_1_parent">Dose 1
+            <div class="dropdown-content td_vac_1_child">
+              <span style="border-bottom:1px solid #999;">Given or not ?</span>
+              <a onclick="return td_vac_11();" class="given td_vac_1_given">Yes Given &nbsp; <i class="fa fa-check"
+                  aria-hidden="true"></i></a>
+              <a onclick="return td_vac_10();" class="notgiven td_vac_1_notgiven">Not Given &nbsp; <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    $(() => {
+      const vaccineUpdate = new VaccineUpdate();
+      vaccineUpdate.load();
+    });
+  </script>
+{% endblock %}

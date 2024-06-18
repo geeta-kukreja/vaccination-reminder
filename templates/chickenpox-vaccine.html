@@ -1,0 +1,57 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Vaccine Details' menu item -->
+{% set active = "Vaccine Details" %}
+
+<!-- Update page title with 'Chickenpox Vaccine' -->
+{% block title %} Chickenpox Vaccine {% endblock %}
+
+<!-- Chickenpox vaccine page content -->
+{% block content %}
+  <div class="col-md-12 text-right">
+    <button class="backbutton animate-box" data-animate-effect="fadeInLeft">
+      <a href="/vaccine-details" title="Back to Vaccine List">Back</a>
+    </button>
+  </div>
+
+  <div class="fh5co-narrow-content vaccine-list vaccine-info">
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Chickenpox Vaccine - Introduction</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Chickenpox or Varicella is the primary clinical manifestation of infection with varicella-zoster virus. Formerly a common childhood infection that affected almost all children, varicella is now relatively uncommon because of successful prevention with universal vaccination.<br>
+      Varicella is highly communicable, with an attack rate of 90% in close contacts. Most people become infected before adulthood but 10% of young adults remain susceptible. However, this pattern of infection is not universal, eg. in rural India, a higher proportion of primary cases are seen in adolescents and young adults . It was suggested that this could be due to interference by other respiratory viruses that the children are exposed to at an early age.<br>
+      Differences in epidemiology described between temperate and tropical climates and disease acquisition at a latter age, in some tropical settings. Disease burden depends on age-specific incidence, morbidity & mortality and number of risk factors for severe disease in the community. Population-based data extremely limited especially from low/middle income countries including India. <br>
+      Recent sero-epidemiologic data from developing countries shows nearly two-thirds of pre-school children, 39% of primary school children, and 29% of adolescents aged 13-17 years are susceptible to VZV infection. At this level of immunity, it can be expected that outbreaks will continue to occur unless the varicella immunization coverage is sustained at a highest possible rate, at national levels.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Historical Background of Varicella Vaccines</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      &#8658; A live, attenuated vaccine, developed in Japan by Dr Takahashi in 1974; an attenuated wild Oka VZV strain used for all vaccine production except in South Korea.<br>
+      &#8658; In 1995, monovalent varicella was approved for use in the United States for healthy people 12 months or older who have not had varicella illness.<br>
+      &#8658; In 2005 , a Combo- MMRV ( Quadrivalent - Proquad by Merck & co) was licensed by the CDC /ACIP on basis of safety and of non-inferior immunogenicity compared with separate MMR and V vaccines.<br>
+      &#8658; MMRV combo vaccine use is for healthy children 12 months through 12 years of age.<br>
+      &#8658; In 2014 , Indian Academy of Pediatrics updates on immunization ; varicella first dose at 15 months of age and a booster dose at preschool age ( 4 to 6y ).<br>
+      &#8658; Refrigerator and freezer stable vaccines.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Contraindications and Precautions</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      As with other vaccines, varicella vaccine should not be administered to people who have moderate or severe illnesses, with or without fever.<br>
+      HIV infection : Varicella vaccine has been shown to protect these children not only against varicella but also against developing herpes zoster, Screening for HIV infection is not indicated before routine VZV immunization. Monovalent varicella vaccine should be considered for HIV-infected children without evidence of immunity and with a CD4+ T-lymphocyte percentage of 15% or greater, especially if they are receiving antiretroviral therapy.<br>
+      Eligible children should receive 2 doses of monovalent varicella vaccine with a 3-month interval between doses and return for evaluation if they experience a postimmunization varicella-like rash.<br>
+      Varicella vaccine should not be administered to people who are receiving high doses of systemic corticosteroids (2 mg/kg per day or more of prednisone or its equivalent or 20 mg/day of prednisone or its equivalent) for 14 days or more. The recommended interval between discontinuation of corticosteroid therapy and immunization with varicella vaccine is at least 1 month. Varicella vaccine may be administered to individuals receiving inhaled, nasal, and topical steroids. <br>
+      Based on very limited data that 2 doses of the varicella vaccine generally are well tolerated and immunogenic, including children receiving low-dose, alternate-day prednisone.<br>
+      Household contacts of immunocompromised people should be immunized if they have no evidence of immunity to decrease the likelihood that wild-type VZV will be introduced into the household.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Adverse Events</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Varicella vaccine is safe; reactions generally are mild and occur with an overall frequency of approximately 5% to 35%. In approximately 3% to 5% of immunized children a generalized maculopspular rather than vesicular rash appears usually 1-3 weeks after immunization without fever . A slightly increased risk of febrile seizures is associated with the higher likelihood of fever following the first dose of MMRV compared with MMR and monovalent varicella.
+    </p>
+
+    <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><i class="fa fa-arrow-right" aria-hidden="true"></i>Breakthrough Disease</h2>
+    <p class="animate-box" data-animate-effect="fadeInLeft">
+      Is defined as varicella disease in a child who had been vaccinated 42 day or more before the onset of a rash. Although breakthrough varicella is generally milder e.g., involves fewer maculo popular lesions, low grade & shorter duration of fever than natural varicella, it is still a cause for concern . Vaccine recipients with varicella breakthrough disease are rarely contagious , typically experience a faster recovery and have no risk for complications.
+    </p>
+  </div>
+{% endblock %}

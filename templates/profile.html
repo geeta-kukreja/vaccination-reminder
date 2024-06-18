@@ -1,0 +1,93 @@
+<!-- Extend base template -->
+{% extends 'foundation.html' %}
+
+<!-- Set active class for 'Profile' menu item -->
+{% set active = "Profile" %}
+
+<!-- Update page title with 'Profile' -->
+{% block title %} Profile {% endblock %}
+
+<!-- Ask question page content -->
+{% block content %}
+<div class="fh5co-narrow-content vaccine-list vaccine-info bootstrap-iso animate-box vaccine-form" data-animate-effect="fadeInLeft">
+  {% if session['user'] %}
+  <form method="post" id="basic">
+    <h2 class="fh5co-heading"><i class="fa fa-arrow-right" aria-hidden="true"></i>Basic Info</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="profile">
+          <div><span class="heading-info">Name</span>{{ session['user']['name'] }}<a title="Edit Name" id="edit-name"><i class="fa fa-pencil"></i>Edit</a></div>
+        </div>
+        <div class="text-center edit-name form-content">
+          <input type="text" name="name" class="form-control" value="{{ session['user']['name'] }}" placeholder="Child Name" required="required">
+          <div class="form-group">
+            <button class="btn btn-primary" value="Save Changes" type="submit">Save Changes <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            <button id ="cancle-name" class="btn btn-primary cancel" value="Cancel" type="button">Cancel <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <form method="post">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="profile">
+          <div><span class="heading-info">Birthdate</span>{{ session['user']['birthdate'] }}<a title="Edit Birthdate" id="edit-birthdate"><i class="fa fa-pencil"></i>Edit</a></div>
+        </div>
+        <div class="form-content text-center edit-birthdate">
+          <input class="form-control" id="date" name="dob" value="{{ session['user']['birthdate'] }}" placeholder="DD/MM/YYYY" type="text" required="required">
+          <div class="form-group">
+            <button class="btn btn-primary" value="Save Changes" type="submit">Save Changes <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            <button id ="cancle-birthdate" class="btn btn-primary cancel" value="Cancel" type="button">Cancel <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <form method="post" id="contact">
+    <h2 class="fh5co-heading" style="margin-top:30px;"><i class="fa fa-arrow-right" aria-hidden="true"></i>Contact Info</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="profile">
+          <div><span class="heading-info">Phone</span>{{ session['user']['contact'] }}<a title="Edit Contact" id="edit-contact"><i class="fa fa-pencil"></i>Edit</a></div>
+        </div>
+        <div class="form-content text-center edit-contact">
+          <input type="text" name="contact" class="form-control" placeholder="Phone" value="{{ session['user']['contact'] }}" required="required">
+          <div class="form-group">
+            <button class="btn btn-primary" value="Save Changes" type="submit">Save Changes <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            <button id ="cancle-contact" class="btn btn-primary cancel" value="Cancel" type="button">Cancel <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <form method="post" id="change_pass">
+    <h2 class="fh5co-heading" style="margin-top:30px;"><i class="fa fa-arrow-right" aria-hidden="true"></i>Change Password</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="profile">
+          <div><span class="heading-info">Password</span>
+          <a title="Change Password" id="change-password"><i class="fa fa-pencil"></i>Edit</a></div>
+        </div>
+        <div class="form-content text-center change-password" style="border-bottom:none;">
+          <input type="password" name="currentpassword" class="form-control" placeholder="Current Password" required="required">
+        </div><br>
+        <div id="notmatched" class="change-password form-group" style="margin-top:0px;border-bottom:none;margin-bottom:0px;">
+
+        </div>
+        <div class="form-content text-center change-password" style="border-bottom:none;margin-top:0px;">
+          <input type="password" name="newpassword" id="password" class="form-control" placeholder="New Password" required="required">
+        </div>
+        <div class="form-content text-center change-password" style="margin-top:0px;">
+          <input type="password" name="confirmnewpassword" id="confirmpassword" class="form-control" placeholder="Confirm New Password" required="required">
+          <div class="form-group">
+            <button class="btn btn-primary" value="Save Changes" type="submit">Save Changes <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            <button id ="cancle-change-password" class="btn btn-primary cancel" value="Cancel" type="button">Cancel <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  {% endif %}
+</div>
+{% endblock %}
