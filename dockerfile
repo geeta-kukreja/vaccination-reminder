@@ -1,4 +1,3 @@
-
 FROM python:3.10-slim
 
 # Set environment variables
@@ -9,16 +8,16 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /vaccination-reminder
 
 # Copy the requirements file into the container
-COPY requirements.txt /vaccination-reminder/
+COPY requirements.txt .
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code into the container
-COPY . /app/
+COPY . .
 
 # Expose port 8082
 EXPOSE 8082
 
 # Command to run the application
-CMD ["python", "run.py"]
+CMD ["python", "./run.py"]
